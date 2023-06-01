@@ -10,6 +10,13 @@ COPY . /var/www/html
 # Copie a pasta "vendor" do projeto local para o contêiner
 COPY vendor /var/www/html/vendor
 
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+COPY --from=composer:latest /app/vendor /app/vendor
+
+
+RUN docker-php-ext-install pdo pdo_mysql
+
+
 # Instale as dependências adicionais
 
 # Defina as permissões corretas para a pasta de armazenamento do Laravel
@@ -20,3 +27,5 @@ EXPOSE 8000
 
 # Execute o servidor Laravel usando o comando "php artisan serve"
 CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
+
+

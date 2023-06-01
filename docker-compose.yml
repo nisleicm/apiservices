@@ -20,7 +20,7 @@ services:
       MYSQL_DATABASE: base
       MYSQL_ROOT_PASSWORD: 0Paulo123#
     ports:
-      - 3306:3306
+      - 30306:3306
     volumes:
       - db_data:/var/lib/mysql
     networks:
