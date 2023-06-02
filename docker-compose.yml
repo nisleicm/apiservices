@@ -10,22 +10,10 @@ services:
     volumes:
       - .:/var/www/html
     depends_on:
-      - db
+      - mysqldc
     networks:
-      - laravel_net
-
-  db:
-    image: mysql:8.0.31
-    environment:
-      MYSQL_DATABASE: base
-      MYSQL_ROOT_PASSWORD: 0Paulo123#
-    ports:
-      - 30306:3306
-    volumes:
-      - db_data:/var/lib/mysql
-    networks:
-      - laravel_net
-
+      - nislei
+  
 networks:
-  laravel_net:
-    driver: bridge
+  nislei:
+    external: true

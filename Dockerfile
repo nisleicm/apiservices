@@ -11,7 +11,7 @@ COPY . /var/www/html
 COPY vendor /var/www/html/vendor
 
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-COPY --from=composer:latest /app/vendor /app/vendor
+COPY --from=composer:latest /var/www/html/vendor /app/vendor
 
 
 RUN docker-php-ext-install pdo pdo_mysql
