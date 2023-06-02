@@ -4981,6 +4981,7 @@ return array(
     'Psy\\Sudo' => $vendorDir . '/psy/psysh/src/Sudo.php',
     'Psy\\Sudo\\SudoVisitor' => $vendorDir . '/psy/psysh/src/Sudo/SudoVisitor.php',
     'Psy\\SuperglobalsEnv' => $vendorDir . '/psy/psysh/src/SuperglobalsEnv.php',
+    'Psy\\SystemEnv' => $vendorDir . '/psy/psysh/src/SystemEnv.php',
     'Psy\\TabCompletion\\AutoCompleter' => $vendorDir . '/psy/psysh/src/TabCompletion/AutoCompleter.php',
     'Psy\\TabCompletion\\Matcher\\AbstractContextAwareMatcher' => $vendorDir . '/psy/psysh/src/TabCompletion/Matcher/AbstractContextAwareMatcher.php',
     'Psy\\TabCompletion\\Matcher\\AbstractDefaultParametersMatcher' => $vendorDir . '/psy/psysh/src/TabCompletion/Matcher/AbstractDefaultParametersMatcher.php',
@@ -6278,5 +6279,10 @@ return array(
     'Whoops\\Util\\Misc' => $vendorDir . '/filp/whoops/src/Whoops/Util/Misc.php',
     'Whoops\\Util\\SystemFacade' => $vendorDir . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
     'Whoops\\Util\\TemplateHelper' => $vendorDir . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
+    'YbrNX\\MariaDB\\Connection' => $vendorDir . '/ybr-nx/laravel-mariadb/src/Connection.php',
+    'YbrNX\\MariaDB\\ConnectionFactory' => $vendorDir . '/ybr-nx/laravel-mariadb/src/ConnectionFactory.php',
+    'YbrNX\\MariaDB\\MariaDBServiceProvider' => $vendorDir . '/ybr-nx/laravel-mariadb/src/MariaDBServiceProvider.php',
+    'YbrNX\\MariaDB\\QueryGrammar' => $vendorDir . '/ybr-nx/laravel-mariadb/src/QueryGrammar.php',
+    'YbrNX\\MariaDB\\SchemaGrammar' => $vendorDir . '/ybr-nx/laravel-mariadb/src/SchemaGrammar.php',
     'voku\\helper\\ASCII' => $vendorDir . '/voku/portable-ascii/src/voku/helper/ASCII.php',
 );

@@ -18,7 +18,8 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "tymon/jwt-auth": "^1.0",
-        "debian/nano": "1.0.0"
+        "illuminate/database": "^8.0",
+        "ybr-nx/laravel-mariadb": "^1.0.20"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
