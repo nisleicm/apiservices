@@ -22,9 +22,9 @@ class c000007Controller extends Controller
      */
     public function index()
     {
-        $clientes = c000007::paginate(100);
+        $cliente = c000007::paginate(100);
 
-        return response()->json($clientes);
+        return response()->json($cliente);
 
     }
 
